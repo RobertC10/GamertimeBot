@@ -27,7 +27,7 @@ client.on('message', async message =>{
     if(message.author.bot) return;
     message.content = message.content.toLowerCase();
      if(message.content.includes('bruh')||message.content.includes('Bruh')||message.content.includes('lmao')||message.content.includes('LMAO')){
-        message.channel.send('😂HE SAID IT😂');
+        message.channel.send('😂THEY SAID IT😂');
     }else if(message.content.includes('good bot')){
         message.channel.send('tysm!!😳😅');
     }else if(message.content.includes('sad') || message.content.includes('lost')){
@@ -36,6 +36,8 @@ client.on('message', async message =>{
         message.channel.send('BIG 🧠');
     }else if(message.content.includes('poggers')){
         message.channel.send('https://cdn.discordapp.com/attachments/785993409168277525/786359909238702090/poggers.png');
+    }else if(message.content.includes('bad bot')){
+        message.channel.send('🥺I\'m sorry😥')
     }
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
@@ -53,6 +55,8 @@ client.on('message', async message =>{
         client.commands.get('youtube').execute(message, args);
     }else if(command == 'smite'){
         client.commands.get('smite').execute(message, args);
+    }else if(command == 'help'){
+        client.commands.get('help').execute(message, args, Discord);
     }
 });
 
