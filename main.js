@@ -57,6 +57,8 @@ client.on('message', async message =>{
         client.commands.get('smite').execute(message, args);
     }else if(command == 'help'){
         client.commands.get('help').execute(message, args, Discord);
+    }else if(command == 'helpt'){
+        client.commands.get('helpt').execute(message, args,);
     }
 });
 
