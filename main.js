@@ -19,7 +19,7 @@ for(const file of commandFiles){
 
 
 client.once('ready', () => {
-    console.log(`Logged in as ${client.user.tag}!`)
+    console.log(`Logged in as ${client.user.tag}!`);
 });
 
 client.on('message', async message =>{
@@ -58,7 +58,9 @@ client.on('message', async message =>{
     }else if(command == 'help'){
         client.commands.get('help').execute(message, args, Discord);
     }else if(command == 'helpt'){
-        client.commands.get('helpt').execute(message, args,);
+        client.commands.get('helpt').execute(message, args);
+    }else if(command == 'philosophy'){
+        client.commands.get('philosophy').execute(message, args);
     }
 });
 
