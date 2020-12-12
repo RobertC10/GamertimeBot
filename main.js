@@ -34,11 +34,21 @@ client.on('message', async message =>{
         message.channel.send('big sad');
     }else if(message.content.includes('smart')){
         message.channel.send('BIG 🧠');
-    }else if(message.content.includes('poggers')){
+    }else if(message.content.includes('poggers')||message.content.includes('fortnite')){
         message.channel.send('https://cdn.discordapp.com/attachments/785993409168277525/786359909238702090/poggers.png');
     }else if(message.content.includes('bad bot')){
-        message.channel.send('🥺I\'m sorry😥')
+        message.channel.send('🥺I\'m sorry😥');
+    }else if(message.content.includes('fuck')){
+        if(message.author.id === '377171910359908352'){
+          message.channel.send('Woah Woah don\'t say the f*ck word!')  ;
+        }
+    }else if(message.content.includes('bye')){
+        message.channel.send('👋cya');
+    }else if(message.content.includes('night') || message.content.includes('sleep')){
+        message.channel.send('😴gn🛌');
     }
+
+
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
 
@@ -61,6 +71,8 @@ client.on('message', async message =>{
         client.commands.get('helpt').execute(message, args);
     }else if(command == 'philosophy'){
         client.commands.get('philosophy').execute(message, args);
+    }else if(command == 'random'){
+        client.commands.get('random').execute(message, args);
     }
 });
 
