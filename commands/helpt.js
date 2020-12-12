@@ -9,6 +9,7 @@ module.exports = {
 (gt!smite <@user>) - have to bot smite whoever you tagged.
 (gt!philosphy) - why this? why that? fuck you.
 (gt!random <keyword>) - For the key word, you can put "name", "number", or "color".
+(gt!image <word>) - The bot will search an image of whatever you put after "gt!image", so if you want to search something that\'s two words, use a dash(-) instead of a space. eg."Minecraft-Bee".
 (😂THEY SAID IT😂) - The message will be sent if your message contains "bruh" or "lmao".
 (tysm!!😳😅) - The message will be sent if your message contains "good bot".
 (big sad) - The message will be sent if your message contains "sad" or "lost".
