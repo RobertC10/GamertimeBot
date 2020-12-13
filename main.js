@@ -50,6 +50,8 @@ client.on('message', async message =>{
         message.channel.send('👋cya');
     }else if(message.content.includes('night') || message.content.includes('sleep')){
         message.channel.send('😴gn🛌');
+    }else if(message.content.includes('morning')||('wake up')){
+        message.channel.send('☀️Rise and Shine!☀️')
     }
 
 
