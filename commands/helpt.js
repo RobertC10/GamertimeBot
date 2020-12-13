@@ -19,7 +19,7 @@ module.exports = {
 (🥺I\'m sorry😥) - The message will be sent if your message contains "bad bot".
 (😴gn🛌) - The message will be sent if your message contains "night" or "sleep".
 (👋cya) - The message will be sent if your message contains "bye".
-
+(☀️Rise and Shine!☀️) - The message will be sent if your message contains "morning" or "wake up".
 `);
 
     }
