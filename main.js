@@ -121,11 +121,6 @@ function image(message, args){
         message.channel.send( urls[Math.floor(Math.random() * urls.length)] );
     });
 
-
-
-
-
-
 }
 
 client.login(config.token)
